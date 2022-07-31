@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Testimonial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="hello">
+    <h1>Testimonial</h1>
+    <div class="container">
+    <div class="indicator">
+        <span class="btn active"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+    </div>
+    <div class="testimonial">
+    <div class="slide-row" id="slide">
+       
+        <div class="slide-col">
+        <div class="user-text">
+            <p>I haven't booked a holiday on line before this so I found trying to contact someone to check on our booking and possible changes was very difficult. The holiday was fantastic and we had no problems so in the end everything was ok. </p>
+                <h3>joseph</h3>
+               </div>
+    
+        <div class="user-image">
+            <img src="joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" >
+        </div>
+        
+          
+        
+    </div>
+    <div class="slide-col">
+    <div class="user-text">
+        <p> The package included hotel accommodation, ski equipment rental, ski passes and bus transport to slopes for a family of 4. 
+
+            I'd like to complement all of the bus drivers for their efficiency and friendliness in challenging situations .</p>
+            <h3>michael</h3>
+    </div>
+    <div class="user-image">
+        <img src="rayul-_M6gy9oHgII-unsplash.jpg" >
+    </div>
+    
+    
+</div>
+<div class="slide-col">
+<div class="user-text">
+    <p> As it's busy with everyone getting back into travel, responses may take time but any issues are resolved quickly.</p>
+    
+        <h3>aiony</h3>
+</div>
+<div class="user-image">
+    <img src="michael-dam-mEZ3PoFGs_k-unsplash.jpg">
+</div>
+
+
+</div>
+<div class="slide-col">
+<div class="user-text">
+    <p> Very helpful and everything ran smoothly and we will continue to use Worldtravel for future holiday</p>
+        <h3>rayul</h3>
+</div>
+<div class="user-image">
+    <img src="aiony-haust-3TLl_97HNJo-unsplash.jpg" >
+</div>
+
+
+</div>
+  </div>  
+</div>
+</div>
+<script>
+   var btn = document.getElementsByClassName("btn");
+   var slide = document.getElementById("slide");
+   btn[0].onclick=function(){
+    slide.style.transform="translateX(0px)";
+    for( i =0 ; i<4;i++){
+    btn[i].classList.remove("active");
+    }
+    this.classlist.add("active");
+   }
+   
+   btn[1].onclick=function(){
+    slide.style.transform="translateX(-800px)";
+    for( i =0 ; i<4;i++){
+    btn[i].classList.remove("active");
+    }
+    this.classlist.add("active");
+   }
+   btn[2].onclick=function(){
+    slide.style.transform="translateX(-1600px)";
+    for( i =0 ; i<4;i++){
+    btn[i].classList.remove("active");
+    }
+    this.classlist.add("active");
+   }
+   btn[3].onclick=function(){
+    slide.style.transform="translateX(-2400px)";
+    for( i =0 ; i<4;i++){
+    btn[i].classList.remove("active");
+    }
+    this.classlist.add("active");
+   }
+
+   
+</script>
+
+</body>
+</html>
